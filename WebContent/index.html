@@ -1,0 +1,51 @@
+<html>
+<body>
+ 
+          <h1> Welcome to the Success-Online Job Portal ! </h1>  
+          
+              <fieldset>
+              <pre><input type="button" name="signup" onclick="mySignup()" value="Signup">   <input type = "button" name="login" value = "Login" onclick = "mylogin()"></pre>
+           </fieldset>
+          <div id = "signup" hidden> 
+          <h3>Sign Up for Free</h3>
+           <fieldset>
+          <form action="main1" method="post"> 
+                <pre> Enter your Name:  <input type="text" required autocomplete="off" name = "name" /></pre>
+                <pre> Email Address:  <input type="email"required name = "email" autocomplete="off"/></pre>
+                <pre> Enter password:  <input type="password"required name = "password" autocomplete="off"/></pre>
+              <pre> Experience : <input type="radio" name="experience" value="Experienced" checked> Experienced    <input type="radio" name="experience" value="Fresher"> Fresher </pre>  
+              <pre> Job Preference : <input type="radio" name="preference" value="Part-Time" checked> Part-Time    <input type="radio" name="preference" value="Full-Time"> Full-Time</pre>
+
+                <pre> Skills/Additional Comments:
+         
+<textarea rows="4" cols="50" name = "skills"></textarea></pre>
+          <button type="submit">Get Started</button>
+          </form>
+          </fieldset>
+        </div>
+        
+        <div id="login" hidden>   
+          <h1>Welcome Back!</h1>
+          
+         <form action="logininfo" method = "post">
+User name:<br>
+<input type="text" name="userid">
+<br>
+User password:<br>
+<input type="password" name="psw"><br>
+  <br> <input type="submit">
+</form>
+</div>
+<script>
+function mylogin() {
+     document.getElementById("login").style.display="block";
+     document.getElementById("signup").style.display="none";
+   
+}
+function mySignup() {
+      document.getElementById("login").style.display="none";
+     document.getElementById("signup").style.display="block";
+}
+</script>
+</body>
+</html>

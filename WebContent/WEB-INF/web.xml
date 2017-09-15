@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app id="WebApp_ID" version="3.0" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+<display-name>project2ser</display-name>
+  
+  <servlet>
+     <servlet-name>main1</servlet-name>
+     <servlet-class>org.example.main1</servlet-class>
+  
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>main1</servlet-name>
+    <url-pattern>/main1</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+     <servlet-name>logininfo</servlet-name>
+     <servlet-class>org.example.logininfo</servlet-class>
+  
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>logininfo</servlet-name>
+    <url-pattern>/logininfo</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+     <servlet-name>mainJob</servlet-name>
+     <servlet-class>org.example.mainJob</servlet-class>
+  
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>mainJob</servlet-name>
+    <url-pattern>/mainJob</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+     <servlet-name>candidate_jobinfo</servlet-name>
+     <servlet-class>org.example.candidate_jobinfo</servlet-class>
+  
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>candidate_jobinfo</servlet-name>
+    <url-pattern>/candidate_jobinfo</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+     <servlet-name>candidate_joblist</servlet-name>
+     <servlet-class>org.example.candidate_joblist</servlet-class>
+  
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>candidate_joblist</servlet-name>
+    <url-pattern>/candidate_joblist</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+     <servlet-name>previousjobs</servlet-name>
+     <servlet-class>org.example.previousjobs</servlet-class>
+  
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>previousjobs</servlet-name>
+    <url-pattern>/previousjobs</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  <servlet>
+     <servlet-name>apply</servlet-name>
+     <servlet-class>org.example.apply</servlet-class>
+  
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>apply</servlet-name>
+    <url-pattern>/apply</url-pattern>
+  </servlet-mapping>
+ 
+  
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>
